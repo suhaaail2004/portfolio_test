@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle with Gradient Border -->
+  <circle cx="200" cy="200" r="190" fill="url(#avatarBg)" stroke="url(#borderGrad)" stroke-width="4" />
+  
+  <!-- Subtle Grid Lines / Tech Pattern -->
+  <g stroke="#38bdf8" stroke-opacity="0.08" stroke-width="1.5">
+    <line x1="50" y1="200" x2="350" y2="200" />
+    <line x1="200" y1="50" x2="200" y2="350" />
+    <circle cx="200" cy="200" r="140" fill="none" />
+    <circle cx="200" cy="200" r="90" fill="none" stroke-dasharray="6,6" />
+  </g>
+
+  <!-- Developer Silhouette / Tech Icon Combo -->
+  <!-- Glowing Hexagon / Node Base -->
+  <polygon points="200,90 280,136 280,228 200,274 120,228 120,136" 
+           fill="url(#cloudGrad)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.4" />
+
+  <!-- Monogram Initials SS -->
+  <text x="200" y="200" text-anchor="middle" dominant-baseline="central" 
+        font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="76" fill="#f8fafc" letter-spacing="-2">
+    SS
+  </text>
+  
+  <!-- Terminal Prompt Bar below -->
+  <rect x="130" y="295" width="140" height="28" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" />
+  <text x="200" y="314" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#38bdf8">
+    suhail@devops:~$
+  </text>
+  
+  <!-- Status Indicator Dot -->
+  <circle cx="280" cy="115" r="8" fill="#10b981" />
+  <circle cx="280" cy="115" r="13" fill="#10b981" fill-opacity="0.3">
+    <animate attributeName="r" values="8;16;8" dur="2.5s" repeatCount="indefinite" />
+    <animate attributeName="fill-opacity" values="0.4;0.05;0.4" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+</svg>

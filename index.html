@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Suhail Shihabudheen — Aspiring DevOps Engineer & Cloud Engineer with RHCSA certification. Specializing in Linux administration, AWS cloud infrastructure, automation, and reliable systems.">
+  <meta name="author" content="Suhail Shihabudheen">
+  <meta name="keywords" content="Suhail Shihabudheen, DevOps Engineer, Cloud Engineer, RHCSA, Red Hat Certified System Administrator, Linux, AWS, EC2, Nginx, Bash, Python, CI/CD">
+  
+  <!-- Open Graph / Meta Cards -->
+  <meta property="og:title" content="Suhail Shihabudheen | Aspiring DevOps & Cloud Engineer (RHCSA)">
+  <meta property="og:description" content="Explore my projects in Linux server administration, AWS cloud deployment, and system automation. RHCSA certified.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://suhail.dev">
+  <meta name="theme-color" content="#090d16">
+
+  <title>Suhail Shihabudheen | Aspiring DevOps & Cloud Engineer (RHCSA)</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <header id="navbar" class="navbar">
+    <div class="container">
+      <!-- Brand Logo / Monogram -->
+      <a href="#hero" class="nav-brand" aria-label="Suhail Shihabudheen Home">
+        <div class="nav-brand-icon">&gt;_</div>
+        <div class="nav-brand-text">Suhail<span>.dev</span></div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons: Theme Toggle & Mobile Hamburger -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (Dark / Light) -->
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <!-- Sun Icon (shown in light mode) -->
+          <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <!-- Moon Icon (shown in dark mode) -->
+          <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+
+        <!-- Mobile Drawer Hamburger -->
+        <button id="hamburger-btn" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION
+         ========================================================================= -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column: Intro & Call to Action -->
+          <div class="hero-content reveal-item">
+            <div class="hero-badge">
+              <span class="status-dot pulsing"></span>
+              <span>Available for Junior DevOps &amp; Cloud Roles</span>
+            </div>
+
+            <div class="hero-title-greeting">&gt; hello_world()</div>
+
+            <h1 class="hero-name">
+              Hi, I'm <span class="hero-name-gradient">Suhail Shihabudheen</span>
+            </h1>
+
+            <!-- Animated Typing Headline -->
+            <div class="hero-typing-wrapper">
+              <span class="hero-typing-prefix">I am an</span>
+              <span id="typing-text" class="hero-typing-text"></span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-description">
+              Computer Science graduate with hands-on expertise in Linux administration, AWS cloud infrastructure, and systems automation. Certified <strong>RHCSA</strong> dedicated to engineering reliable, secure, and resilient cloud environments.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Contact Me</span>
+              </a>
+              <a href="resume/suhail__shihabudheen.pdf" download="Suhail_Shihabudheen_Resume.pdf" class="btn btn-outline" title="Download Resume PDF">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <!-- Highlights Strip -->
+            <div class="hero-highlights">
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>RHCSA Certified</span>
+              </div>
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>RHEL &amp; Linux Admin</span>
+              </div>
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>AWS EC2 &amp; Cloud</span>
+              </div>
+              <div class="hero-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Bash &amp; Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Interactive DevOps Terminal Widget -->
+          <div class="hero-visual reveal-item delay-2">
+            <div class="terminal-card">
+              <!-- Window Top Bar with Interactive Tab Switchers -->
+              <div class="terminal-header">
+                <div class="terminal-header-left">
+                  <div class="terminal-dots">
+                    <span class="terminal-dot red" title="Close"></span>
+                    <span class="terminal-dot yellow" title="Minimize"></span>
+                    <span class="terminal-dot green" title="Maximize"></span>
+                  </div>
+                  <span class="terminal-title">suhail@cloud-node:~</span>
+                </div>
+
+                <div class="terminal-tabs" role="tablist">
+                  <button class="term-tab-btn active" data-tab-target="tab-sysinfo" role="tab" aria-selected="true">neofetch.sh</button>
+                  <button class="term-tab-btn" data-tab-target="tab-services" role="tab" aria-selected="false">systemctl.log</button>
+                  <button class="term-tab-btn" data-tab-target="tab-deploy" role="tab" aria-selected="false">deploy.sh</button>
+                </div>
+              </div>
+
+              <!-- Terminal Content Area -->
+              <div class="terminal-body">
+                
+                <!-- Tab View 1: Sysinfo / Neofetch -->
+                <div id="tab-sysinfo" class="term-output-view active">
+                  <div class="term-cmd">
+                    <span class="term-prompt-symbol">$</span> ./fetch-devops-profile.sh --verbose
+                  </div>
+                  <div class="term-output-grid">
+                    <div class="term-row">
+                      <span class="term-key">OS:</span>
+                      <span class="term-val highlight">Red Hat Enterprise Linux 9</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Certification:</span>
+                      <span class="term-val rhcsa">RHCSA Certified</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Host:</span>
+                      <span class="term-val">AWS EC2 (Ubuntu / Nginx)</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Education:</span>
+                      <span class="term-val">B.Tech Computer Science &amp; Engg</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Core Stack:</span>
+                      <span class="term-val">Linux, AWS, Git, Nginx, Bash, Python</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Goal:</span>
+                      <span class="term-val success">DevOps &amp; Cloud Reliability Engineer</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Uptime:</span>
+                      <span class="term-val">99.99% (Eager to learn &amp; build)</span>
+                    </div>
+                  </div>
+                  <div class="term-status-pill">
+                    <span class="status-dot"></span>
+                    <span>System State: Hardened &amp; Production Ready</span>
+                  </div>
+                </div>
+
+                <!-- Tab View 2: Systemctl Service Status -->
+                <div id="tab-services" class="term-output-view">
+                  <div class="term-cmd">
+                    <span class="term-prompt-symbol">$</span> sudo systemctl status nginx --no-pager
+                  </div>
+                  <div class="term-output-grid">
+                    <div class="term-row">
+                      <span class="term-key">Service:</span>
+                      <span class="term-val highlight">nginx.service - Reverse Proxy</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Active:</span>
+                      <span class="term-val success">active (running) since reboot</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Ports:</span>
+                      <span class="term-val">80 (HTTP) &amp; 443 (HTTPS)</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">WebRoot:</span>
+                      <span class="term-val">/var/www/portfolio</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">Firewall:</span>
+                      <span class="term-val success">firewalld: http/https allowed</span>
+                    </div>
+                  </div>
+                  <div class="term-status-pill">
+                    <span class="status-dot"></span>
+                    <span>Health Check: 200 OK (0 packet loss)</span>
+                  </div>
+                </div>
+
+                <!-- Tab View 3: Deployment Script Output -->
+                <div id="tab-deploy" class="term-output-view">
+                  <div class="term-cmd">
+                    <span class="term-prompt-symbol">$</span> bash ./scripts/deploy-portfolio.sh
+                  </div>
+                  <div class="term-output-grid">
+                    <div class="term-row">
+                      <span class="term-key">[1/4]</span>
+                      <span class="term-val">Pulling latest commits from GitHub... OK</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">[2/4]</span>
+                      <span class="term-val">Validating static HTML, CSS &amp; JS... OK</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">[3/4]</span>
+                      <span class="term-val">Syncing files to /var/www/portfolio... OK</span>
+                    </div>
+                    <div class="term-row">
+                      <span class="term-key">[4/4]</span>
+                      <span class="term-val highlight">sudo systemctl reload nginx... SUCCESS</span>
+                    </div>
+                  </div>
+                  <div class="term-status-pill">
+                    <span class="status-dot"></span>
+                    <span>Deployment Complete: 0 downtime</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. ABOUT ME SECTION
+         ========================================================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <div class="section-tag">[ 01. ABOUT ME ]</div>
+          <h2 class="section-title">Systems, Cloud &amp; Continuous Improvement</h2>
+          <p class="section-subtitle">A focused Computer Science graduate with hands-on Linux administration skills and an enthusiasm for reliable cloud infrastructure.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Left Column -->
+          <div class="about-text reveal-item">
+            <p>
+              I am a <strong>Computer Science and Engineering graduate</strong> with a dedicated interest in Linux systems administration, cloud infrastructure, networking, and DevOps practices. Rather than treating servers and infrastructure as black boxes, I enjoy understanding how operating systems, networking protocols, and cloud platforms interact to keep modern services resilient and performant.
+            </p>
+
+            <p>
+              To establish a rigorous, industry-recognized foundation, I completed the <strong>Red Hat Certified System Administrator (RHCSA)</strong> certification. Through hands-on lab environments, I developed practical competence in managing Red Hat Enterprise Linux systems—including storage configuration with LVM, user and permission management, systemd daemon maintenance, firewall rules, and automated shell workflows.
+            </p>
+
+            <p>
+              I am focused on applying these systems skills towards <strong>AWS cloud computing</strong> and modern <strong>DevOps automation</strong>. I believe in writing clear technical documentation, testing deployments systematically, and continuously improving my skills by building practical projects from the ground up.
+            </p>
+
+            <!-- RHCSA Callout Box -->
+            <div class="about-rhcsa-callout">
+              <svg class="about-rhcsa-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <div class="about-rhcsa-content">
+                <h4>RHCSA Certified System Administrator</h4>
+                <p>Performance-tested in enterprise Linux administration, disk management, process isolation, and security controls on Red Hat Enterprise Linux.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Highlights Right Column -->
+          <div class="about-facts-grid reveal-item delay-2">
+            
+            <div class="fact-card">
+              <div class="fact-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <div class="fact-title">Education</div>
+              <div class="fact-value">B.Tech in CSE</div>
+              <div class="fact-desc">Computer Science &amp; Engineering foundation in core computing, OS, and networking.</div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-icon-wrapper red">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <div class="fact-title">Certification</div>
+              <div class="fact-value">Red Hat RHCSA</div>
+              <div class="fact-desc">Certified System Administrator on Red Hat Enterprise Linux (RHEL).</div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-icon-wrapper purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+                </svg>
+              </div>
+              <div class="fact-title">Primary Focus</div>
+              <div class="fact-value">DevOps &amp; AWS Cloud</div>
+              <div class="fact-desc">EC2 provisioning, security groups, Nginx hosting, Bash automation, and CI/CD.</div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-icon-wrapper green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div class="fact-title">Mindset</div>
+              <div class="fact-value">Practical Labs First</div>
+              <div class="fact-desc">Hands-on experimentation, repeatable configuration, and zero simulated claims.</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. TECHNICAL SKILLS SECTION
+         ========================================================================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <div class="section-tag">[ 02. TECHNICAL SKILLS ]</div>
+          <h2 class="section-title">Technical Competencies &amp; Tooling</h2>
+          <p class="section-subtitle">An honest representation of my technical skills, certified competencies, and practical hands-on experience without inflated claims.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Operating Systems -->
+          <div class="skill-category-card reveal-item">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-name">Operating Systems</h3>
+                <span class="skill-category-desc">Core system administration &amp; enterprise Linux</span>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-badge certified">Linux (RHEL 9) <span class="badge-level">RHCSA</span></span>
+              <span class="skill-badge">Ubuntu / Debian <span class="badge-level">Working</span></span>
+              <span class="skill-badge">systemd &amp; Services <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Storage &amp; LVM <span class="badge-level">Certified</span></span>
+              <span class="skill-badge">Users, Groups &amp; Permissions <span class="badge-level">Certified</span></span>
+              <span class="skill-badge">SELinux &amp; Firewalld <span class="badge-level">Certified</span></span>
+            </div>
+          </div>
+
+          <!-- Category 2: Cloud Computing -->
+          <div class="skill-category-card reveal-item delay-1">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-name">Cloud (AWS)</h3>
+                <span class="skill-category-desc">AWS fundamentals &amp; compute infrastructure</span>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-badge">AWS EC2 Provisioning <span class="badge-level">Hands-on</span></span>
+              <span class="skill-badge">EBS Storage &amp; Snapshots <span class="badge-level">Hands-on</span></span>
+              <span class="skill-badge">Security Groups &amp; Rules <span class="badge-level">Core</span></span>
+              <span class="skill-badge">AWS VPC Fundamentals <span class="badge-level">Learning</span></span>
+              <span class="skill-badge">S3 Storage Basics <span class="badge-level">Foundational</span></span>
+              <span class="skill-badge">IAM Principles <span class="badge-level">Foundational</span></span>
+            </div>
+          </div>
+
+          <!-- Category 3: DevOps & Tooling -->
+          <div class="skill-category-card reveal-item delay-2">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-name">DevOps &amp; Web Servers</h3>
+                <span class="skill-category-desc">Deployment, version control &amp; proxies</span>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-badge">Git &amp; GitHub <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Nginx Web Server <span class="badge-level">Hands-on</span></span>
+              <span class="skill-badge">Reverse Proxy Setup <span class="badge-level">Hands-on</span></span>
+              <span class="skill-badge">CI/CD Concepts <span class="badge-level">Foundational</span></span>
+              <span class="skill-badge">GitHub Actions <span class="badge-level">Active Lab</span></span>
+              <span class="skill-badge">Package Managers (dnf/apt) <span class="badge-level">Core</span></span>
+            </div>
+          </div>
+
+          <!-- Category 4: Programming & Scripting -->
+          <div class="skill-category-card reveal-item">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"/>
+                  <line x1="12" y1="19" x2="20" y2="19"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-name">Programming &amp; Scripting</h3>
+                <span class="skill-category-desc">Command-line scripting &amp; automation</span>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-badge">Bash Shell Scripting <span class="badge-level">Hands-on</span></span>
+              <span class="skill-badge">Python Fundamentals <span class="badge-level">Working</span></span>
+              <span class="skill-badge">Cron Job Automation <span class="badge-level">Certified</span></span>
+              <span class="skill-badge">Text Processing (grep/sed) <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Log Parsing Scripts <span class="badge-level">Hands-on</span></span>
+            </div>
+          </div>
+
+          <!-- Category 5: Networking & Security -->
+          <div class="skill-category-card reveal-item delay-1">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="16" y="16" width="6" height="6" rx="1"/>
+                  <rect x="2" y="16" width="6" height="6" rx="1"/>
+                  <rect x="9" y="2" width="6" height="6" rx="1"/>
+                  <path d="M5 16v-3a1 1 0 011-1h12a1 1 0 011 1v3M12 12V8"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-name">Networking &amp; Protocols</h3>
+                <span class="skill-category-desc">Network fundamentals &amp; access security</span>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-badge">TCP/IP &amp; OSI Model <span class="badge-level">Core</span></span>
+              <span class="skill-badge">DNS &amp; Domain Resolution <span class="badge-level">Working</span></span>
+              <span class="skill-badge">HTTP / HTTPS Protocols <span class="badge-level">Core</span></span>
+              <span class="skill-badge">SSH Key Management <span class="badge-level">Certified</span></span>
+              <span class="skill-badge">Ports &amp; Socket Basics <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Diagnostic Tools (curl/ping) <span class="badge-level">Hands-on</span></span>
+            </div>
+          </div>
+
+          <!-- Category 6: Web Technologies -->
+          <div class="skill-category-card reveal-item delay-2">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-name">Web Technologies</h3>
+                <span class="skill-category-desc">Front-end architecture &amp; standards</span>
+              </div>
+            </div>
+            <div class="skill-tags-list">
+              <span class="skill-badge">Semantic HTML5 <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Modern CSS3 (Flex/Grid) <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Vanilla JavaScript <span class="badge-level">Working</span></span>
+              <span class="skill-badge">Responsive Layouts <span class="badge-level">Core</span></span>
+              <span class="skill-badge">Web Accessibility (a11y) <span class="badge-level">Foundational</span></span>
+              <span class="skill-badge">REST API Concepts <span class="badge-level">Foundational</span></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. FEATURED PROJECTS SECTION
+         ========================================================================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <div class="section-tag">[ 03. FEATURED PROJECTS ]</div>
+          <h2 class="section-title">Practical Infrastructure &amp; Deployments</h2>
+          <p class="section-subtitle">Real-world projects demonstrating cloud provisioning, server administration, and reliable web hosting configurations.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Personal Portfolio Website -->
+          <article class="project-card reveal-item">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-portfolio.svg" alt="Personal Portfolio on AWS EC2 with Nginx Architecture" loading="lazy">
+              <span class="project-status-badge live">EC2 Hosted Demo</span>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Cloud Deployment &amp; Web Hosting</div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-description">
+                A lightweight, highly responsive developer portfolio built from scratch using pure semantic HTML5, modern CSS, and vanilla JavaScript. Deployed on an AWS EC2 Ubuntu instance and served via an optimized Nginx web server.
+              </p>
+              
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">Zero frameworks for maximum performance and fast load times</div>
+                <div class="project-highlight-item">Nginx reverse-proxy configuration with gzip and static caching</div>
+                <div class="project-highlight-item">Dynamic dark/light theme persistence and accessible navigation</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">Vanilla JS</span>
+                <span class="project-tag">AWS EC2</span>
+                <span class="project-tag">Nginx</span>
+                <span class="project-tag">Ubuntu</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Clearly marked placeholders -->
+                <a href="https://github.com/yourusername/portfolio-website" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer" title="View repository placeholder">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="#hero" class="btn btn-outline btn-sm" title="Active on this site">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Linux Server Administration Lab -->
+          <article class="project-card reveal-item delay-1">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-linux.svg" alt="Linux Server Administration Lab on RHEL 9" loading="lazy">
+              <span class="project-status-badge lab">RHCSA Lab Project</span>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Systems Administration &amp; Security</div>
+              <h3 class="project-title">Linux Server Administration Lab</h3>
+              <p class="project-description">
+                A hands-on systems administration lab focused on configuring, hardening, and maintaining an enterprise Red Hat Enterprise Linux 9 environment according to RHCSA practical standards.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">Configured users, groups, sudo privileges, and filesystem ACLs</div>
+                <div class="project-highlight-item">Created LVM volumes with dynamic expansion and xfs filesystems</div>
+                <div class="project-highlight-item">Automated backup tasks with cron and configured custom systemd units</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">RHEL 9</span>
+                <span class="project-tag">Bash Scripting</span>
+                <span class="project-tag">systemd</span>
+                <span class="project-tag">LVM Storage</span>
+                <span class="project-tag">Cron</span>
+                <span class="project-tag">Firewalld</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Clearly marked placeholders -->
+                <a href="https://github.com/yourusername/linux-server-admin-lab" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer" title="View repository placeholder">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="#about" class="btn btn-outline btn-sm" title="View lab documentation placeholder">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  <span>Lab Specs</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AWS EC2 Web Server Deployment -->
+          <article class="project-card reveal-item delay-2">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-aws.svg" alt="AWS EC2 Web Server Provisioning with Security Groups" loading="lazy">
+              <span class="project-status-badge cloud">Cloud Deployment</span>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Cloud Infrastructure &amp; Automation</div>
+              <h3 class="project-title">AWS EC2 Web Server Deployment</h3>
+              <p class="project-description">
+                A structured cloud infrastructure project demonstrating secure Amazon EC2 instance provisioning, EBS storage attachment, custom security group rules, and Git-driven Nginx deployment.
+              </p>
+
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">Configured inbound firewall rules for SSH (22), HTTP (80), and HTTPS (443)</div>
+                <div class="project-highlight-item">Provisioned persistent EBS general purpose SSD (gp3) root volume</div>
+                <div class="project-highlight-item">Established automated Git clone workflows for zero-downtime updates</div>
+              </div>
+
+              <div class="project-tags">
+                <span class="project-tag">AWS EC2</span>
+                <span class="project-tag">AWS EBS</span>
+                <span class="project-tag">Security Groups</span>
+                <span class="project-tag">Nginx</span>
+                <span class="project-tag">Git</span>
+                <span class="project-tag">Ubuntu LTS</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Clearly marked placeholders -->
+                <a href="https://github.com/yourusername/aws-ec2-web-deployment" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer" title="View repository placeholder">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repo</span>
+                </a>
+                <a href="#about" class="btn btn-outline btn-sm" title="View architecture guide placeholder">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  <span>Architecture</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. CERTIFICATIONS SECTION
+         ========================================================================= -->
+    <section id="certifications" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <div class="section-tag">[ 04. CERTIFICATIONS ]</div>
+          <h2 class="section-title">Professional Certification</h2>
+          <p class="section-subtitle">Hands-on, performance-based credential validating core system administration competencies on Red Hat Enterprise Linux.</p>
+        </div>
+
+        <div class="cert-showcase reveal-item">
+          
+          <!-- Badge Column -->
+          <div class="cert-badge-col">
+            <img src="assets/images/rhcsa-badge.svg" alt="Red Hat Certified System Administrator (RHCSA) Badge" class="cert-badge-img">
+            <span class="cert-status-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Verified Credential</span>
+            </span>
+          </div>
+
+          <!-- Certification Details Column -->
+          <div class="cert-content-col">
+            <div class="cert-org">Red Hat, Inc. &bull; Enterprise Linux</div>
+            <h3 class="cert-title">Red Hat Certified System Administrator (RHCSA)</h3>
+            <p class="cert-desc">
+              The RHCSA certification is earned by completing a hands-on, practical examination testing the core competencies required of system administrators working with Red Hat Enterprise Linux. It verifies practical ability to deploy, maintain, and secure real-world Linux systems.
+            </p>
+
+            <div class="cert-competencies-grid">
+              <div class="cert-competency-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Essential file management &amp; command-line tools</span>
+              </div>
+              <div class="cert-competency-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Operating systemd services &amp; process troubleshooting</span>
+              </div>
+              <div class="cert-competency-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Local storage, partitions &amp; Logical Volumes (LVM)</span>
+              </div>
+              <div class="cert-competency-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Creating file systems, permissions &amp; access controls</span>
+              </div>
+              <div class="cert-competency-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Basic network configuration, firewalld &amp; SSH access</span>
+              </div>
+              <div class="cert-competency-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>User, group, and password security administration</span>
+              </div>
+            </div>
+
+            <div class="cert-actions">
+              <!-- Official Red Hat Verification Link Placeholder -->
+              <a href="https://www.redhat.com/en/services/certification" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <span>Verify on Red Hat Registry</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <span class="cert-verify-info">Credential ID: [Verify ID: RHCSA-XXXXXX]</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. LEARNING JOURNEY & ROADMAP SECTION
+         ========================================================================= -->
+    <section id="journey" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <div class="section-tag">[ 05. LEARNING JOURNEY ]</div>
+          <h2 class="section-title">DevOps &amp; Cloud Growth Roadmap</h2>
+          <p class="section-subtitle">My structured learning path towards mastering enterprise cloud infrastructure, automated pipelines, and containerization.</p>
+        </div>
+
+        <div class="journey-timeline">
+          
+          <div class="journey-card reveal-item">
+            <div class="journey-card-header">
+              <span class="journey-step-badge">Milestone 01</span>
+              <span class="journey-status-pill">Active Study</span>
+            </div>
+            <h3 class="journey-title">AWS Solutions Architecture</h3>
+            <p class="journey-desc">Deepening knowledge in Amazon VPC design, multi-tier subnets, internet gateways, route tables, and S3 storage tiering for high availability.</p>
+            <div class="journey-topics">
+              <span class="journey-topic-tag">VPC Subnets</span>
+              <span class="journey-topic-tag">Route Tables</span>
+              <span class="journey-topic-tag">IAM Roles</span>
+              <span class="journey-topic-tag">S3 Bucket Policies</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item delay-1">
+            <div class="journey-card-header">
+              <span class="journey-step-badge">Milestone 02</span>
+              <span class="journey-status-pill">In Progress</span>
+            </div>
+            <h3 class="journey-title">Containerization (Docker)</h3>
+            <p class="journey-desc">Building lightweight container images, multi-stage Dockerfiles, volume mounts, and isolated container networking for microservices.</p>
+            <div class="journey-topics">
+              <span class="journey-topic-tag">Dockerfiles</span>
+              <span class="journey-topic-tag">Multi-stage</span>
+              <span class="journey-topic-tag">Volumes</span>
+              <span class="journey-topic-tag">Docker Compose</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item delay-2">
+            <div class="journey-card-header">
+              <span class="journey-step-badge">Milestone 03</span>
+              <span class="journey-status-pill">Upcoming</span>
+            </div>
+            <h3 class="journey-title">CI/CD Pipeline Automation</h3>
+            <p class="journey-desc">Creating automated continuous integration and continuous deployment pipelines using GitHub Actions to lint, test, and deploy to AWS.</p>
+            <div class="journey-topics">
+              <span class="journey-topic-tag">GitHub Actions</span>
+              <span class="journey-topic-tag">Workflows</span>
+              <span class="journey-topic-tag">Automated Testing</span>
+              <span class="journey-topic-tag">Webhooks</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item">
+            <div class="journey-card-header">
+              <span class="journey-step-badge">Milestone 04</span>
+              <span class="journey-status-pill">Upcoming</span>
+            </div>
+            <h3 class="journey-title">Infrastructure as Code (IaC)</h3>
+            <p class="journey-desc">Learning declarative infrastructure provisioning with Terraform to manage AWS resources reproducibly across different environments.</p>
+            <div class="journey-topics">
+              <span class="journey-topic-tag">Terraform</span>
+              <span class="journey-topic-tag">HCL Syntax</span>
+              <span class="journey-topic-tag">State Files</span>
+              <span class="journey-topic-tag">AWS Provider</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item delay-1">
+            <div class="journey-card-header">
+              <span class="journey-step-badge">Milestone 05</span>
+              <span class="journey-status-pill">Active Study</span>
+            </div>
+            <h3 class="journey-title">Bash Automation &amp; Scripting</h3>
+            <p class="journey-desc">Developing reusable shell automation scripts for server provisioning, log rotation, automated backups, and health-check alerting.</p>
+            <div class="journey-topics">
+              <span class="journey-topic-tag">Shell Scripts</span>
+              <span class="journey-topic-tag">Log Monitoring</span>
+              <span class="journey-topic-tag">Error Handling</span>
+              <span class="journey-topic-tag">System Health</span>
+            </div>
+          </div>
+
+          <div class="journey-card reveal-item delay-2">
+            <div class="journey-card-header">
+              <span class="journey-step-badge">Milestone 06</span>
+              <span class="journey-status-pill">Continuous</span>
+            </div>
+            <h3 class="journey-title">Cloud Security &amp; Hardening</h3>
+            <p class="journey-desc">Implementing the principle of least privilege, SSH key-only logins, port minimization, and security audits across cloud environments.</p>
+            <div class="journey-topics">
+              <span class="journey-topic-tag">Least Privilege</span>
+              <span class="journey-topic-tag">SSH Hardening</span>
+              <span class="journey-topic-tag">Audit Logs</span>
+              <span class="journey-topic-tag">Patching</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. CONTACT SECTION
+         ========================================================================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <div class="section-tag">[ 06. CONTACT ]</div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in discussing DevOps opportunities, cloud roles, or technical collaborations? Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Channels List Card -->
+          <div class="contact-info-card reveal-item">
+            <div>
+              <h3 class="contact-info-title">Let's Connect</h3>
+              <p class="contact-info-desc">
+                I am actively seeking entry-level DevOps Engineer and Cloud Engineer positions. You can reach me via email or through my professional profiles below.
+              </p>
+            </div>
+
+            <div class="contact-channels-list">
+              
+              <!-- Email Item with 1-Click Copy -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="contact-item-meta">
+                    <span class="contact-item-label">Email Address</span>
+                    <a href="mailto:suhail.shihabudheen.devops@example.com" class="contact-item-value" title="Send email">
+                      suhail.shihabudheen.devops@example.com
+                    </a>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-secondary btn-sm btn-copy-email" data-email="suhail.shihabudheen.devops@example.com" title="Copy email address to clipboard">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div class="contact-item-meta">
+                    <span class="contact-item-label">LinkedIn Profile</span>
+                    <a href="https://linkedin.com/in/suhail-shihabudheen" target="_blank" rel="noopener noreferrer" class="contact-item-value">
+                      linkedin.com/in/suhail-shihabudheen
+                    </a>
+                  </div>
+                </div>
+                <a href="https://linkedin.com/in/suhail-shihabudheen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Visit</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <div class="contact-item-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </div>
+                  <div class="contact-item-meta">
+                    <span class="contact-item-label">GitHub Repository</span>
+                    <a href="https://github.com/suhail-shihabudheen" target="_blank" rel="noopener noreferrer" class="contact-item-value">
+                      github.com/suhail-shihabudheen
+                    </a>
+                  </div>
+                </div>
+                <a href="https://github.com/suhail-shihabudheen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <span>Visit</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Resume Download Card -->
+          <div class="contact-resume-card reveal-item delay-1">
+            <div class="resume-card-header">
+              <h3 class="resume-card-title">Curriculum Vitae</h3>
+              <p class="resume-card-desc">
+                Download my comprehensive engineering resume outlining my B.Tech coursework, Red Hat Certified System Administrator (RHCSA) credential, hands-on lab accomplishments, and technical skillset.
+              </p>
+
+              <div class="resume-meta-box">
+                <div class="resume-pdf-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                  </svg>
+                </div>
+                <div class="resume-details">
+                  <span class="resume-filename">suhail__shihabudheen.pdf</span>
+                  <span class="resume-meta-sub">PDF Document &bull; Verified ATS Compatible</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-actions">
+              <a href="resume/suhail__shihabudheen.pdf" download="Suhail_Shihabudheen_Resume.pdf" class="btn btn-primary" id="btn-download-resume">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <a href="resume/suhail__shihabudheen.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <span>Preview in Browser</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Suhail<span>.dev</span></div>
+          <div class="footer-role">Aspiring DevOps &amp; Cloud Engineer &bull; RHCSA Certified</div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#certifications" class="footer-link">Certifications</a>
+          <a href="#journey" class="footer-link">Journey</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Suhail Shihabudheen. All rights reserved. Built with pure HTML, CSS &amp; Vanilla JavaScript.
+        </div>
+        <div class="footer-status-pill">
+          <span class="status-dot"></span>
+          <span>Status: EC2 Node Operational &bull; Nginx Serving</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       10. FLOATING UTILITIES (BACK TO TOP & TOAST)
+       ========================================================================= -->
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="toast" role="alert" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-message">Message copied!</span>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>
