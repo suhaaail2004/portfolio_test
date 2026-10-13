@@ -1,8 +1,8 @@
-# Suhail Shihabudheen — DevOps & Cloud Engineer Portfolio
+# Suhail Shihabudheen — Junior DevOps & Cloud Engineer Portfolio
 
-A modern, high-performance, and visually captivating developer portfolio built with **pure HTML5, CSS3, and vanilla JavaScript** (zero external frameworks or runtime dependencies). 
+A clean, modern, minimal, and professional developer portfolio built with **pure HTML5, CSS3, and vanilla JavaScript** (zero external frameworks or runtime dependencies). 
 
-Designed specifically for entry-level **DevOps Engineer** and **Cloud Engineer** roles, highlighting practical Linux administration, Red Hat Certified System Administrator (**RHCSA**) credentials, and AWS cloud hosting competencies.
+Designed specifically for entry-level **Junior DevOps Engineer**, **Cloud Engineer**, and **Linux System Administrator** roles, highlighting practical Linux administration, Red Hat Certified System Administrator (**RHCSA**) credentials, and AWS cloud hosting competencies.
 
 ---
 
@@ -12,9 +12,9 @@ Designed specifically for entry-level **DevOps Engineer** and **Cloud Engineer**
 portfolio/
 ├── index.html                # Semantic HTML5 single-page application structure
 ├── css/
-│   └── style.css             # Design system, CSS variables, dark/light themes & responsiveness
+│   └── style.css             # Minimal design system, CSS variables, light/dark themes & responsiveness
 ├── js/
-│   └── script.js             # Vanilla JS for navigation, theme toggle, typing & animations
+│   └── script.js             # Vanilla JS for navigation, theme toggle, clipboard copy & scrollspy
 ├── assets/
 │   └── images/
 │       ├── avatar.svg        # Developer monogram badge vector
@@ -23,28 +23,26 @@ portfolio/
 │       ├── project-linux.svg     # Linux Server Administration Lab terminal visual
 │       └── project-aws.svg       # AWS EC2 Cloud Provisioning & Security Groups visual
 ├── resume/
-│   └── suhail__shihabudheen.pdf # Your official resume document (accessible via download & view)
+│   └── suhail__shihabudheen.pdf # Official resume document (accessible via download & view)
 └── README.md                 # Complete documentation and deployment guide
 ```
 
 ### File Responsibilities
 1. **`index.html`**:
-   - Contains semantic HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-   - Implements 7 distinct sections: Sticky Navigation, Hero, About Me, Technical Skills, Featured Projects, Certifications (RHCSA), Learning Journey, and Direct Contact Channels.
-   - Includes full OpenGraph metadata, SEO tags, accessible `aria-*` attributes, and inline SVGs.
+   - Contains semantic HTML5 elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
+   - Implements 7 distinct sections: Navigation, Hero with Engineering Profile Card, About Me, Technical Skills (6 clean categories), Featured Projects, Certifications (RHCSA), Learning Journey, and Direct Contact Channels.
+   - Includes OpenGraph metadata, SEO tags, accessible `aria-*` attributes, and clean SVG iconography.
 2. **`css/style.css`**:
-   - Centralizes design tokens in `:root` CSS variables (`--bg-primary`, `--accent-cyan`, `--border-card`, etc.).
-   - Full dark mode (navy/slate/cyan palette) with toggleable light mode (`[data-theme="light"]`).
-   - Custom sleek scrollbar, glassmorphic navbar, responsive grid/flexbox layouts down to 320px mobile width.
+   - Centralizes design tokens in `:root` CSS variables using a clean, light theme by default (`#F8FAFC` background, `#172033` dark navy text, `#2563EB` blue accent, `#FFFFFF` cards, `#E2E8F0` borders).
+   - Understated slate dark mode toggleable via `[data-theme="dark"]`.
+   - Subtle shadows, moderate rounded corners, Inter typography, and responsive layouts down to 320px mobile width.
    - Respects user accessibility preferences (`prefers-reduced-motion`).
 3. **`js/script.js`**:
-   - **Theme Switching**: Toggles dark and light mode, stores user preference in `localStorage`.
+   - **Theme Switching**: Toggles light and dark mode, defaulting to light mode and persisting preference in `localStorage`.
    - **Mobile Drawer**: Handles responsive hamburger menu open/close, click outside, and `Escape` key listeners.
    - **ScrollSpy & Smooth Scroll**: Dynamically highlights active navigation links as you scroll through sections.
-   - **Typing Animation**: Smooth typing effect cycling through technical headlines in the hero section.
-   - **Interactive Terminal**: Allows users to click tabs (`neofetch.sh`, `systemctl.log`, `deploy.sh`) to see different server logs.
-   - **Clipboard Copy with Toast**: Copies email address with 1-click and triggers a floating toast confirmation.
-   - **Scroll Reveal**: Uses modern `IntersectionObserver` API for buttery-smooth element reveals.
+   - **Clipboard Copy with Toast**: Copies email address with 1-click and triggers a subtle toast confirmation.
+   - **Scroll Reveal**: Uses `IntersectionObserver` API for smooth element reveals.
    - **Dynamic Date**: Keeps copyright year current (`new Date().getFullYear()`).
 
 ---
@@ -65,22 +63,13 @@ Because this project is built using vanilla web standards, you do not need any c
    ```powershell
    code C:\Users\Suhail\Desktop\portfolio_test
    ```
-2. Install the **Live Server** extension (`ritwickdey.liveserver`) if installed.
-3. Click **"Go Live"** in the bottom status bar to view on `http://127.0.0.1:5500`.
-
-### Method 3: Using Python Static Server (Optional)
-If Python is installed on your machine:
-```powershell
-cd C:\Users\Suhail\Desktop\portfolio_test
-python -m http.server 8080
-```
-Open `http://localhost:8080` in your web browser.
+2. Click **"Go Live"** in the bottom status bar if Live Server is installed to view on `http://127.0.0.1:5500`.
 
 ---
 
 ## 🎨 How to Customize Content, Colors & Links
 
-All configurable data is cleanly organized with explicit comments:
+All configurable data is cleanly organized:
 
 ### 1. Customizing Personal Details & Social Links
 Open `index.html` and search for these placeholders:
@@ -94,56 +83,13 @@ Open `index.html` and search for these placeholders:
 Open `css/style.css` at the top:
 ```css
 :root {
-  /* Change dark theme base colors */
-  --bg-primary: #090d16;      /* Main background */
-  --accent-cyan: #38bdf8;     /* Primary neon blue accent */
-  --accent-indigo: #818cf8;   /* Secondary purple accent */
-  --color-success: #10b981;   /* Terminal & status green */
+  --bg-primary: #F8FAFC;         /* Clean slate-50 background */
+  --bg-surface: #FFFFFF;         /* Pure white cards */
+  --text-primary: #172033;       /* Dark navy text */
+  --text-secondary: #64748B;     /* Slate-500 secondary text */
+  --accent-blue: #2563EB;        /* Professional blue accent */
+  --border-color: #E2E8F0;       /* Slate-200 clean borders */
 }
-
-[data-theme="light"] {
-  /* Change light theme colors */
-  --bg-primary: #f8fafc;
-  --text-primary: #0f172a;
-}
-```
-
-### 3. Customizing the Hero Typing Text
-Open `js/script.js` and modify the array in `typeEffect()`:
-```javascript
-const words = [
-  'Aspiring DevOps Engineer',
-  'Cloud Infrastructure Enthusiast',
-  'RHCSA Certified SysAdmin',
-  'Linux & Automation Specialist'
-];
-```
-
----
-
-## 🐙 How to Upload the Project to GitHub
-
-Follow these steps using Git in PowerShell:
-
-### Step 1: Initialize Git Repository
-```powershell
-cd C:\Users\Suhail\Desktop\portfolio_test
-git init
-```
-
-### Step 2: Add Files & Make Initial Commit
-```powershell
-git add .
-git commit -m "feat: initial commit of Suhail Shihabudheen DevOps portfolio"
-```
-
-### Step 3: Link to Remote GitHub Repository
-1. Go to [github.com/new](https://github.com/new) and create a repository named `portfolio` (keep it Public).
-2. Run:
-```powershell
-git branch -M main
-git remote add origin https://github.com/<your-username>/portfolio.git
-git push -u origin main
 ```
 
 ---
@@ -158,7 +104,7 @@ This setup follows industry best practices for hosting static websites on AWS.
    - **Name**: `devops-portfolio-webserver`
    - **AMI**: Ubuntu Server 22.04 LTS (HVM), SSD Volume Type
    - **Instance Type**: `t2.micro` or `t3.micro` (Free Tier eligible)
-   - **Key Pair**: Create or select an existing `.pem` key pair (e.g. `suhail-key.pem`)
+   - **Key Pair**: Create or select an existing `.pem` key pair
 3. **Network Settings (Security Group)**:
    - Allow **SSH** (Port `22`) from your IP address
    - Allow **HTTP** (Port `80`) from `0.0.0.0/0` (Anywhere)
@@ -168,14 +114,14 @@ This setup follows industry best practices for hosting static websites on AWS.
 ---
 
 ### Step 2: Connect to your EC2 Instance via SSH
-From your local terminal (where your key is saved):
+From your local terminal:
 ```bash
-ssh -i "path/to/suhail-key.pem" ubuntu@<YOUR_EC2_PUBLIC_IP>
+ssh -i "path/to/your-key.pem" ubuntu@<YOUR_EC2_PUBLIC_IP>
 ```
 
 ---
 
-### Step 3: Update System Packages and Install Nginx & Git
+### Step 3: Update Packages and Install Nginx & Git
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y nginx git
@@ -189,7 +135,6 @@ sudo systemctl status nginx
 ---
 
 ### Step 4: Clone Your Portfolio onto the Server
-Remove the default Nginx welcome page and clone your repository:
 ```bash
 # Remove default web root
 sudo rm -rf /var/www/html/*
@@ -216,12 +161,12 @@ server {
     listen 80;
     listen [::]:80;
 
-    server_name _; # Or replace with your custom domain name (e.g. suhail.dev)
+    server_name _; # Or replace with your domain name (e.g. suhail.dev)
 
     root /var/www/portfolio;
     index index.html;
 
-    # Gzip Compression for high performance
+    # Gzip Compression for fast load times
     gzip on;
     gzip_types text/plain text/css application/javascript image/svg+xml;
     gzip_min_length 256;
@@ -245,30 +190,13 @@ server {
 
 Enable the configuration and reload Nginx:
 ```bash
-# Enable the site configuration
 sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/
-
-# Remove the default site link
 sudo rm -f /etc/nginx/sites-enabled/default
-
-# Test Nginx syntax
 sudo nginx -t
-
-# Reload Nginx service
 sudo systemctl reload nginx
 ```
 
 Now open `http://<YOUR_EC2_PUBLIC_IP>` in your web browser. Your portfolio is live! 🚀
-
----
-
-### Step 6: (Optional) Set up Free SSL via Let's Encrypt (Certbot)
-If you point a domain name (e.g., `suhail.dev`) to your EC2 Public IP:
-```bash
-sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d suhail.dev -d www.suhail.dev
-```
-Certbot will automatically configure HTTPS on port 443 with auto-renewal!
 
 ---
 
