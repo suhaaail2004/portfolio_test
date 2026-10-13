@@ -9,12 +9,12 @@
    1. DESIGN TOKENS & COLOR SYSTEM
    -------------------------------------------------------------------------- */
 :root {
-  /* Light Theme Palette (Default) */
-  --bg-primary: #F8FAFC;         /* Clean slate-50 background */
+  /* Light Theme Palette (Default - Clean Light Blue) */
+  --bg-primary: #EBF3FC;         /* Clean soft light blue background */
   --bg-surface: #FFFFFF;         /* Pure white cards and containers */
-  --bg-subtle: #F1F5F9;          /* Subtle light grey for badges and inner wells */
-  --bg-hover: #F8FAFC;           /* Card hover subtle fill */
-  --bg-glass: rgba(248, 250, 252, 0.92); /* Frosted navbar */
+  --bg-subtle: #E0EDFB;          /* Subtle light blue for badges and inner wells */
+  --bg-hover: #E5F0FC;           /* Card hover subtle fill */
+  --bg-glass: rgba(235, 243, 252, 0.94); /* Frosted navbar */
 
   /* Text Colors */
   --text-primary: #172033;       /* Dark navy text for headings and body */
@@ -29,8 +29,8 @@
   --accent-blue-border: #BFDBFE; /* Blue-200 subtle border */
 
   /* Borders & Dividers */
-  --border-color: #E2E8F0;       /* Slate-200 clean borders */
-  --border-subtle: #F1F5F9;      /* Extra soft inner borders */
+  --border-color: #D3E2F4;       /* Slate-blue clean borders */
+  --border-subtle: #E0EDFB;      /* Extra soft inner borders */
   --border-focus: #2563EB;
 
   /* Status & Brand Accents */
@@ -203,9 +203,13 @@ ul, ol {
 }
 
 .section-alt {
-  background-color: var(--bg-surface);
+  background-color: #E2EEFA;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .section-alt {
+  background-color: #172235;
 }
 
 @media (max-width: 768px) {
@@ -1548,11 +1552,15 @@ ul, ol {
    13. FOOTER
    -------------------------------------------------------------------------- */
 .footer {
-  background-color: var(--bg-surface);
+  background-color: #DFEBF8;
   border-top: 1px solid var(--border-color);
   padding: 40px 0 28px 0;
   color: var(--text-secondary);
   font-size: 0.88rem;
+}
+
+[data-theme="dark"] .footer {
+  background-color: var(--bg-surface);
 }
 
 .footer-top {

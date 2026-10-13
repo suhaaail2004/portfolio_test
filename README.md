@@ -83,12 +83,12 @@ Open `index.html` and search for these placeholders:
 Open `css/style.css` at the top:
 ```css
 :root {
-  --bg-primary: #F8FAFC;         /* Clean slate-50 background */
+  --bg-primary: #EBF3FC;         /* Clean soft light blue background */
   --bg-surface: #FFFFFF;         /* Pure white cards */
   --text-primary: #172033;       /* Dark navy text */
   --text-secondary: #64748B;     /* Slate-500 secondary text */
   --accent-blue: #2563EB;        /* Professional blue accent */
-  --border-color: #E2E8F0;       /* Slate-200 clean borders */
+  --border-color: #D3E2F4;       /* Slate-blue clean borders */
 }
 ```
 
